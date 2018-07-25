@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700|Raleway:300,400,600,700,800');
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-image: radial-gradient(397.79px at 50% 50%,#1f4456 0,#153342 100%);
+    /*background-image: radial-gradient( circle 250px at 48% 50.5%, rgba(40,49,73,0.93) 4.6%, rgba(40,49,73,1) 93.6% );*/
+}
+p{
+  line-height: 1.7em;
+  letter-spacing: -.3px;
+}
+h2, h3, h4, h5 {
+    font-family: PT Serif,serif;
+}
+.padding{
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+}
+.btn{
+    min-width: 10%;
+    background-color: #f73859;
+    border-color: #fb3153;
+}
+#navbar{
+    background-color: transparent;
+    padding: 2%;
+    transition: all 0.8s ease-in-out !important;;
+}
+.navbar-nav li{
+    padding-right: 1.2em;
+}
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.nav-sticky{
+    background-image: radial-gradient(397.79px at 50% 50%,#1f4456 0,#153342 100%) !important;
+    padding: 0.6rem 0 !important;
+}
+.welcome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.welcome h1{
+    font-size: 4.3em;
+    letter-spacing: -2px;
+    font-weight: 800;
+    margin-top: .5em;
+    color: white;
+}
+.welcome p{
+    font-size: 2em;
+    font-weight: 400;
+}
+.welcome .social-icon a{
+    font-size: 2.2em;
+    color: whitesmoke;
+}
+.welcome .social-icon a:hover{
+    color: #dbedf3b0;
+}
+.welcome .social-icon i{
+    padding: 0 4%;
+}
+.icon-wrap{
+    top: 70%;
+    font-size: 1.5em;
+    -webkit-animation: 3s arrow infinite ease;
+    animation: 3s arrow infinite ease;
+}
+.icon-wrap a{
+    color: white ;
+}
+#projects{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100vh;
+}
+#projects h2{
+    margin-top: 0;
+    margin-bottom: .6em;
+    font-size: 2.8em;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: #283149;
+}
+.project-wrap{
+    height: 100%;
+    text-decoration: none !important;
+    color: #404b69 !important;
+}
+.project-wrap:hover{
+    opacity: 0.8;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+.btn-show{
+    width: 40%;
+    margin: 5% 30% 6%;  
+    min-width: 10%
+}
+.content-contact{
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    min-height: calc(100vh - 30%);
+}
+.content-contact h2{
+    margin-top: 0;
+    margin-bottom: .6em;
+    font-size: 4em;
+    font-weight: 600;
+    letter-spacing: -4px;
+    color: #283149;
+}
+.content-contact .container{
+    max-width: 30em;
+}
+.btn-contact{
+    width: 65%;
+    margin: 0 4em;
+}
+.btn-contact i{
+    font-weight: 100;
+}
+.btn:active,
+.btn:focus,
+.btn:hover{
+    background-color: #f81d42 !important;
+    border-color: #fb3153 !important;
+    box-shadow: none !important;
+}
+footer{
+    background-color: #153342;
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 1em;
+    font-weight: 200;
+    padding: 1em;
+}
+.fa-heart{
+    color: #f73859;
+}  
+
+@keyframes arrow {
+  0%, 1000% {
+    top: 50px;
+  }
+  50% {
+    top: 100px;
+  }
+}
+@media only screen and (max-width: 1800px){
+    .icon-wrap{
+        top: 55% !important;
+    }
+}
+@media only screen and (max-width: 776px){
+    .welcome h1{
+        font-size: 3.8em;
+    }
+    .welcome p{
+        font-size: 1.8em;
+    }
+    .icon-wrap{
+        top: 95%;
+    }
+}
+@media only screen and (max-width: 637px){
+    .navbar{
+        padding: 2.5% 5%!important;
+    }
+    .icon-wrap{
+        top: 65%;
+    }
+}
+@media only screen and (max-width: 576px){
+    .navbar{
+        padding: 2.5% 7%!important;
+    }
+    .welcome h1{
+        font-size: 3.5em;
+        margin-top: -1% !important;
+    }
+    .welcome p{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 412px){
+    .navbar{
+        padding: 2.5% 6% !important;
+    }
+    .welcome h1{
+        font-size: 3em;
+        margin-top: -1% !important;
+    }
+    .welcome p{
+        font-size: 1.1em;
+    }
+    .icon-wrap{
+        font-size: 1.2em;
+    }
+}
